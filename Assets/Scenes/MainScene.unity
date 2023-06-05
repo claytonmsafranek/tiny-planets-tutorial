@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567475756}
   - component: {fileID: 567475755}
+  - component: {fileID: 567475757}
   m_Layer: 0
   m_Name: planet (1)
   m_TagString: Untagged
@@ -291,6 +292,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &567475757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567475754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabd09680ae212b40a2912f8f6cf412a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!1 &656427796
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656427798}
   - component: {fileID: 656427797}
+  - component: {fileID: 656427799}
   m_Layer: 0
   m_Name: planet
   m_TagString: Untagged
@@ -375,6 +393,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656427799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656427796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabd09680ae212b40a2912f8f6cf412a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!1 &1761998416
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761998418}
   - component: {fileID: 1761998417}
+  - component: {fileID: 1761998419}
   m_Layer: 0
   m_Name: planet (2)
   m_TagString: Untagged
@@ -459,3 +494,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761998419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761998416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabd09680ae212b40a2912f8f6cf412a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
