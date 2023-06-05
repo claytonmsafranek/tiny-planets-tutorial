@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomPatrol : MonoBehaviour
 {
@@ -50,5 +51,16 @@ public class RandomPatrol : MonoBehaviour
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         return new Vector2(randomX, randomY);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // check if a collision occurs between two planets
+        if (collision.tag == "Planet")
+        {
+            Debug.Log("GAME OVER");
+            // just reload the scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
