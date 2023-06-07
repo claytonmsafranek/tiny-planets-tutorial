@@ -10,7 +10,14 @@ public class RandomPatrol : MonoBehaviour
     public float minY;
     public float maxY;
 
-    public float speed;
+    public float minSpeed;
+    public float maxSpeed;
+
+    public GameObject restartPanel;
+
+    float speed;
+
+    public float secondsToMaxDifficulty;
 
     Vector2 targetPosition;
 
@@ -35,6 +42,7 @@ public class RandomPatrol : MonoBehaviour
         // check if planet position is equal to target position, need to cast transform to vector2 from vector3
         if ((Vector2)transform.position != targetPosition)
         {
+            speed = Mathf.Lerp(minSpeed, maxSpeed, GetDifficultyPercent());
             // MoveTowards takes in current position, target postion, and speed to move
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
@@ -60,7 +68,16 @@ public class RandomPatrol : MonoBehaviour
         {
             Debug.Log("GAME OVER");
             // just reload the scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+            // set the restart panel active
+            restartPanel.SetActive(true);
         }
     }
+
+    private float GetDifficultyPercent()
+    {
+        return Mathf.Clamp01(Time.timeSinceLevelLoad / secondsToMaxDifficulty);
+    }
+
 }
