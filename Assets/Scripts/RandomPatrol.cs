@@ -67,11 +67,7 @@ public class RandomPatrol : MonoBehaviour
         if (collision.tag == "Planet")
         {
             Debug.Log("GAME OVER");
-            // just reload the scene
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-            // set the restart panel active
-            restartPanel.SetActive(true);
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 

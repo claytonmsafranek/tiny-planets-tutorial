@@ -15,6 +15,6 @@ public class MainMenuController : MonoBehaviour
     {
         // get the rect transform position of the title text
         Vector3 titlePos = gameObject.GetComponent<RectTransform>().anchoredPosition3D;
-        Debug.Log("Title position: " + titlePos);
+        // Debug.Log("Title position: " + titlePos);
     }
 }
